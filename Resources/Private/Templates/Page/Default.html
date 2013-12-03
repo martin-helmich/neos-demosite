@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<!--suppress XmlUnboundNsPrefix -->
+<html>
+<head>
+    <f:section name="stylesheets">
+        <link rel="stylesheet"
+              href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'TYPO3.Twitter.Bootstrap')}"/>
+        <link rel="stylesheet"
+              href="{f:uri.resource(path: '3/css/bootstrap-theme.min.css', package: 'TYPO3.Twitter.Bootstrap')}"/>
+        <style type="text/css"> body {
+            margin-top: 50px;
+        } </style>
+    </f:section>
+    <f:section name="scripts">
+        <script type="text/javascript"
+                src="{f:uri.resource(path: 'Libraries/jQuery/jquery-1.10.1.min.js', package: 'TYPO3.Twitter.Bootstrap')}"></script>
+        <script type="text/javascript"
+                src="{f:uri.resource(path: '3/js/bootstrap.min.js', package: 'TYPO3.Twitter.Bootstrap')}"></script>
+    </f:section>
+</head>
+<body>
+<f:section name="body">
+    <nav class="menu">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Neos rocks!</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    {parts.menu -> f:format.raw()}
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        {parts.breadcrumb -> f:format.raw()}
+        {content.main -> f:format.raw()}
+    </div>
+</f:section>
+</body>
+</html>

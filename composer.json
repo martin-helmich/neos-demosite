@@ -1,0 +1,14 @@
+{
+    "name": "mh/demosite",
+    "type": "typo3-flow-site",
+    "description": "Demonstration package for TYPO3 Neos sites",
+    "require": {
+        "typo3/neos": "*",
+        "typo3/twitter-bootstrap": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "MH\\DemoSite": "Classes"
+        }
+    }
+}

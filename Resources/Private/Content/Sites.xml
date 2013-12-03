@@ -1,30 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<site nodeName="demosite" type="TYPO3.Neos:Page">
-		<properties>
-			<name>Demonstration site</name>
-			<title><![CDATA[Home]]></title>
-			<state>1</state>
-			<siteResourcesPackageKey>MH.DemoSite</siteResourcesPackageKey>
-		</properties>
-		<node type="TYPO3.Neos:ContentCollection" nodeName="main">
-			<node type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
-				<properties>
-					<text><![CDATA[<p>This is the homepage</p>]]></text>
-				</properties>
-			</node>
-		</node>
-		<node type="TYPO3.Neos:Page" nodeName="subpage">
-			<properties>
-				<title>A sub page</title>
-			</properties>
-			<node type="TYPO3.Neos:ContentCollection" nodeName="main">
-				<node type="TYPO3.Neos.NodeTypes:Text" nodeName="text1">
-					<properties>
-						<text><![CDATA[<p>This is the first sub page</p>]]></text>
-					</properties>
-				</node>
-			</node>
-		</node>
-	</site>
+    <site identifier="87e55632-ef9f-3bf1-742d-8597cc531056" type="TYPO3.Neos:Page" nodeName="demosite" locale="">
+        <properties>
+            <name>Demonstration site</name>
+            <title>Home</title>
+            <state></state>
+            <siteResourcesPackageKey>MH.DemoSite</siteResourcesPackageKey>
+        </properties>
+        <node identifier="0d66bea0-9b4f-87d1-794c-3f2bbc560f58" type="TYPO3.Neos:ContentCollection" nodeName="main"
+              locale="">
+            <node identifier="083acaff-88b4-24ef-4ece-b37f93d8b276" type="TYPO3.Neos.NodeTypes:Text" nodeName="text1"
+                  locale="">
+                <properties>
+                    <text><![CDATA[<p>This is the homepage.</p>]]></text>
+                </properties>
+            </node>
+        </node>
+        <node identifier="fda7ad8c-c90b-c610-d0ca-5913466bcaf7" type="TYPO3.Neos:Page" nodeName="ueber-uns" locale="">
+            <properties>
+                <title>Über uns</title>
+            </properties>
+            <node identifier="adbf6e82-2b67-148a-bee0-3490c0497fa9" type="TYPO3.Neos:ContentCollection" nodeName="main"
+                  locale="">
+                <node identifier="54ea8eca-fefc-d331-c82f-1a9b8b12c46e" type="TYPO3.Neos.NodeTypes:Headline"
+                      nodeName="node529757dab2f31" locale="">
+                    <properties>
+                        <title><![CDATA[<h3>Über uns</h3>]]></title>
+                    </properties>
+                </node>
+                <node identifier="c677d0b2-71d4-069c-168c-7e39d8d307fa" type="TYPO3.Neos.NodeTypes:Text"
+                      nodeName="node529757f240d79" locale="">
+                    <properties>
+                        <text>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </text>
+                    </properties>
+                </node>
+            </node>
+            <node identifier="cff2ea8b-9f9f-9315-19e8-554a9671bc46" type="TYPO3.Neos:ContentCollection"
+                  nodeName="teaser" locale=""/>
+        </node>
+        <node identifier="c509e80f-d2bd-8adb-c2c5-5b51616ed8ec" type="TYPO3.Neos:Page" nodeName="produkte" locale="">
+            <properties>
+                <title>Produkte</title>
+            </properties>
+            <node identifier="f94848b4-c091-607c-dc6b-fc72ce2c01f1" type="TYPO3.Neos:ContentCollection" nodeName="main"
+                  locale=""/>
+            <node identifier="0e23f1f0-2349-80a6-34eb-d3d345269265" type="TYPO3.Neos:ContentCollection"
+                  nodeName="teaser" locale=""/>
+        </node>
+        <node identifier="60551535-b536-53ab-54a8-80a7852040ca" type="TYPO3.Neos:Page" nodeName="kontakt" locale="">
+            <properties>
+                <title>Kontakt</title>
+            </properties>
+            <node identifier="2d1cbaf5-9edc-b790-70f5-faf805c85e85" type="TYPO3.Neos:ContentCollection" nodeName="main"
+                  locale=""/>
+            <node identifier="c222ef5f-2038-ee60-3906-3ff2c66ce074" type="TYPO3.Neos:ContentCollection"
+                  nodeName="teaser" locale=""/>
+        </node>
+    </site>
 </root>
